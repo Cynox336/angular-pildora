@@ -1,0 +1,28 @@
+<div class="hero-item">
+    <div class="image">
+        <img [src]="hero.image" [alt]="hero.name" />
+    </div>
+    <div class="details">
+        <div class="hero-name">{{ hero.name }}</div>
+    </div>
+    <div class="hero-powerstats">
+        <span> Carisma: {{ hero.powerstats.carisma }} </span>
+        <button [disabled]="hero.powerstats.carisma >= 100" (click)="incrementPowerstat('carisma')">+</button>
+        <button [disabled]="hero.powerstats.carisma <= 0" (click)="decrementPowerstat('carisma')">-</button>
+        <span> Fuerza: {{ hero.powerstats.fuerza }} </span>
+        <button [disabled]="hero.powerstats.fuerza >= 100" (click)="incrementPowerstat('fuerza')">+</button>
+        <button [disabled]="hero.powerstats.fuerza <= 0" (click)="decrementPowerstat('fuerza')">-</button>
+        <span> Inteligencia: {{ hero.powerstats.inteligencia }} </span>
+        <button [disabled]="hero.powerstats.inteligencia >= 100" (click)="incrementPowerstat('inteligencia')">+</button>
+        <button [disabled]="hero.powerstats.inteligencia <= 0" (click)="decrementPowerstat('inteligencia')">-</button>
+        <span> Velocidad: {{ hero.powerstats.velocidad }} </span>
+        <button [disabled]="hero.powerstats.velocidad >= 100" (click)="incrementPowerstat('velocidad')">+</button>
+        <button [disabled]="hero.powerstats.velocidad <= 0" (click)="decrementPowerstat('velocidad')">-</button>
+        <span> Destreza: {{ hero.powerstats.destreza }} </span>
+        <button [disabled]="hero.powerstats.destreza >= 100" (click)="incrementPowerstat('destreza')">+</button>
+        <button [disabled]="hero.powerstats.destreza <= 0" (click)="decrementPowerstat('destreza')">-</button>
+        <span> Sabiduria: {{ hero.powerstats.sabiduria }} </span>
+        <button [disabled]="hero.powerstats.sabiduria >= 100" (click)="incrementPowerstat('sabiduria')">+</button>
+        <button [disabled]="hero.powerstats.sabiduria <= 0" (click)="decrementPowerstat('sabiduria')">-</button>
+    </div>
+</div>

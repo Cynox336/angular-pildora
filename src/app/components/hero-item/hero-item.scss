@@ -1,0 +1,22 @@
+.hero-item {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    .details {
+        text-align: center;
+    }
+
+    .hero-name {
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    .hero-powerstats {
+        display: grid;
+        grid-template-columns: auto max-content max-content;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+}
